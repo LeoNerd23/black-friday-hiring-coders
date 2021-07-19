@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Black Friday</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="application-name" content="Black Friday" />
+    <meta name="author" content="Wellington" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="icon/discount.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Black Friday</h1>
+        <section class="main-banner__container">
+            <div class="main-banner__container--countdown">
+                <div class="main-banner__container--countdown-content">
+                    <div class="header__countdown-container">
+                        <div class="header__countdown-box">
+                            <p class="header__countdown--text">Começa em:</p>
+                            <div class="countdown" id="header__countdown__countdown">
+                                <div class="countdown__item">
+                                    <div class="countdown__timer" id="js-countdown-days-header"
+                                        aria-labelledby='day-countdown'></div>
+                                    <div id="day-countdown" class="countdown__label">dias</div>
+                                </div>
+                                <span>:</span>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer" id="js-countdown-hours-header"
+                                        aria-labelledby='hour-countdown'></div>
+                                    <div id="hour-countdown" class="countdown__label">horas</div>
+                                </div>
+                                <span>:</span>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer" id="js-countdown-minutes-header"
+                                        aria-labelledby='minute-countdown'></div>
+                                    <div id="minute-countdown" class="countdown__label">minutos</div>
+                                </div>
+                                <span>:</span>
+                                <div class="countdown__item">
+                                    <div class="countdown__timer" id="js-countdown-seconds-header"
+                                        aria-labelledby='second-countdown'></div>
+                                    <div id="second-countdown" class="countdown__label">segundos</div>
+                                </div>
+                                <div id="time__countdown_header" style="display:none">2020-11-27 23:59:59</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-banner__container--image">
+                <img src="./icon/BlackFriday-Banner-mobile.jpeg" alt="Main Banner" class="banner-mobile" />
+                <img src="./icon/BlackFriday-Banner.jpeg" alt="Main Banner" class="banner-desk" />
+            </div>
+        </section>
+
+        <section class="advantages__container">
+            <div class="advantages__container--boxes">
+                <div class="advantages__container--boxes-content">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Seja o primeiro a saber</span>
+                </div>
+                <div class="advantages__container--boxes-content">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span>Facilidade e praticidade em encontrar o que procura</span>
+                </div>
+                <div class="advantages__container--boxes-content">
+                    <i class="fas fa-percent" aria-hidden="true"></i>
+                    <span>Descontos imperdíveis</span>
+                </div>
+                <div class="advantages__container--boxes-content">
+                    <i class="fas fa-money-bill-wave" aria-hidden="true"></i>
+                    <span>Economia de dinheiro e tempo</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="email__container">
+            <div class="email__container--box">
+                <div class="email__container--title">
+                    <h2>Cadastre seu e-mail para receber promoções</h2>
+                </div>
+                <div class="email__container--content">
+                    <form>
+                        <input type="text" placeholder="Digite seu e-mail" id="email" />
+                        <button type="button" id="button">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

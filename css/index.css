@@ -1,0 +1,298 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+body {
+    margin: 0;
+    background: #000;
+    font-family: Noto Sans JP;
+    background: linear-gradient(#000 76%, #d30d0d 100%);
+    height: 100%;
+}
+
+h1 {
+    display: none;
+}
+
+/*Banner container e countdonw*/
+.main-banner__container {
+    position: relative;
+    padding: 0 5%;
+    width: auto;
+}
+
+.main-banner__container--countdown {
+    position: absolute;
+    top: 33px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    left: 5%;
+    width: auto;
+    right: 5%;
+    justify-content: center;
+}
+
+.header__countdown--text {
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+}
+
+.countdown__item {
+    border: solid 1px #d30d0d;
+    box-shadow: inset 0 0 1em #d30d0d, 0 0 1em #fff;
+    border-radius: 10px;
+    padding: 5px 2px;
+    min-width: 50px;
+}
+
+.countdown__timer {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.countdown__label {
+    color: #fff;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.countdown span {
+    color: #fff;
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+}
+
+.main-banner__container--image .banner-desk {
+    display: none;
+}
+
+.main-banner__container--image .banner-mobile {
+    width: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+/*Vantagens*/
+.advantages__container {
+    padding: 40px 5% 0;
+}
+
+.advantages__container--boxes {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__container--boxes-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.advantages__container--boxes-content i {
+    color: #fff;
+    text-align: center;
+    font-size: 65px;
+    border-radius: 50%;
+    background: #d30d0d;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.advantages__container--boxes-content span {
+    color: #fff;
+    text-align: center;
+    min-height: 72px;
+    padding-top: 10px;
+    font-size: 11px;
+    line-height: 18px;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/*Cadastro*/
+.email__container {
+    padding: 40px 5%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.email__container--box {
+    border: solid 1px #d30d0d;
+    width: auto;
+    border-radius: 19px;
+    padding: 30px;
+    box-shadow: inset 0 0 1em #d30d0d, 0 0 1em #fff;
+    max-width: 540px;
+    margin: 0 auto;
+    background: #333;
+}
+
+.email__container--title h2 {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.email__container--content form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.email__container--content input {
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    color: #666;
+    font-family: Noto Sans JP;
+}
+
+.email__container--content input::placeholder {
+    color: #666666;
+}
+
+.email__container--content button {
+    border-radius: 6px;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #d30d0d;
+    cursor: pointer;
+}
+
+.email__container--content button:hover {
+    filter: brightness(1.30);
+}
+
+@media (min-width: 640px) {
+    .main-banner__container--countdown {
+        top: 78px;
+    }
+
+    .header__countdown--text {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .countdown__item {
+        min-width: 80px;
+    }
+
+    .countdown__timer {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .countdown__label {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .main-banner__container--image .banner-mobile {
+        height: 583px;
+    }
+
+    .advantages__container--boxes-content span {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .email__container--title h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding-bottom: 50px;
+    }
+
+    .main-banner__container--countdown {
+        justify-content: flex-start;
+        height: 100%;
+        top: 0;
+        left: 15%;
+    }
+
+    .header__countdown--text {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .main-banner__container--image .banner-mobile {
+        display: none;
+    }
+
+    .main-banner__container--image .banner-desk {
+        display: block;
+        width: 100%;
+    }
+
+    .countdown__item {
+        min-width: 100px;
+    }
+
+    .countdown__timer {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .countdown__label {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .countdown span {
+        padding: 0 10px;
+        font-size: 20px;
+    }
+
+    .advantages__container--boxes {
+        flex-wrap: nowrap;
+    }
+
+    .email__container {
+        padding: 70px 5% 40px;
+    }
+
+    .email__container--box {
+        max-width: 800px;
+        padding: 30px 30px 50px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .main-banner__container--countdown {
+        left: 20%;
+    }
+}
